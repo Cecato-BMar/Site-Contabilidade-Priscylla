@@ -5,7 +5,7 @@
     padding: 0px;
 }
 
-\* Definir variáveis para as cores */
+/* Definir variáveis para as cores */
 :root {
     --cinza : #434343;
     --marron : #593202;
@@ -17,21 +17,24 @@
 
 header {       
     background-color: #AA7839;
+    text-align: center;
+    
+   
    
 }   
 header > img {
     width: 200px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 20px;
-    float: left;
+    display: inline-block;
     
 }
-header #topo {
-   display: inline-block;
-   
+header #topo {     
    padding-left: 20px;
    height: 150px;
    margin: 30px;
+   padding-bottom: 10px;
+   
    
 }
 header #topo > h1 {
@@ -41,10 +44,70 @@ header #topo > h1 {
 header #topo > p {
     font-size: 1.5em;
     color: #FFE3B2;
-}
-nav  {
-    background-color: #593202;
-    padding: 10px;
-    padding-left: 20px;
     
+}
+span#burger{
+    background-color: var(--marron);
+    display: block;
+    color: var(--bege);
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+span#burger:hover{
+    color: var(--marron);
+    background-color: var(--bege);
+    cursor: pointer;
+
+}
+menu{
+    display: none;
+    
+}
+menu > ul{
+    list-style-type: none;
+    background-color: var(--marron);
+    
+}
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--marron);
+    color: var(--bege);
+    border-top: 2px solid var(--marron02);
+}
+menu > ul >li> a:hover{
+    background-color: var(--bege);
+    color: var(--marron);
+}
+
+
+
+
+
+
+
+
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    span#burger{
+        display: none;
+
+    }
+    menu{
+        display: block;
+        text-align: center;
+                
+    }
+    menu > ul > li {
+        display: inline-block;
+        
+
+    }
+    main {
+        width: 800px;
+    }
 }
