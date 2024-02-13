@@ -1,2 +1,50 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+\* Definir variáveis para as cores */
+:root {
+    --cinza : #434343;
+    --marron : #593202;
+    --marronclaro: #AA7839;
+    --bege: #FFE3B2;
+    --marron02: #A66B38;
+    
+}
+
+header {       
+    background-color: #AA7839;
+   
+}   
+header > img {
+    width: 200px;
+    padding-top: 15px;
+    padding-left: 20px;
+    float: left;
+    
+}
+header #topo {
+   display: inline-block;
+   
+   padding-left: 20px;
+   height: 150px;
+   margin: 30px;
+   
+}
+header #topo > h1 {
+    font-size: 4em;
+    color: #FFE3B2;
+}
+header #topo > p {
+    font-size: 1.5em;
+    color: #FFE3B2;
+}
+nav  {
+    background-color: #593202;
+    padding: 10px;
+    padding-left: 20px;
+    
+}
