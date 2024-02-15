@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    list-style: none;
 }
 
 /* Definir variáveis para as cores */
@@ -83,8 +84,9 @@ menu > ul > li > a {
 menu > ul >li> a:hover{
     background-color: var(--bege);
     color: var(--marron);
+}main{
+    background-color: var(--cinza);
 }
-
 section.sobre-mim {
     background-image: url('../img/sobre.png');
     background-size: cover; /* Faz com que a imagem cubra toda a seção */
@@ -109,35 +111,62 @@ section.sobre-mim > p {
     border-radius: 0px 0px 10px 10px;
     padding: 5px;
     box-shadow: 5px 10px 10px;
+}
+
+section#servicos > h2 {
+    background-color: var(--marron02);
+    text-align: center;
+    color: var(--bege);
+    padding: 3px;
+    border: 2px solid var(--bege);
+    border-radius: 10px;
+
+}
+section#servicos > h3 {
+    background-color: var(--marron);
+    color: var(--bege);
+    text-align: center;
+    padding: 3px;
+    border: 2px solid var(--marronclaro);
+    border-radius: 10px;
+    margin: 10px;
+}
 /*--------------------CARDs----------------------------------------------------*/
 .card {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 400px;
+    height: 100%;
     margin: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--marron02);
     border-radius: 10px;
     box-shadow: 2px 2px 2px solid black;
+    background-color: var(--cinza);
+    color: ;
 }
 
 .card-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 15%;
 }
 
 .card-title {
     font-size: 18px;
     font-weight: bold;
     margin: 10px;
+    text-align: center;
+    color: var(--bege);
 }
 
 .card-text {
     font-size: 16px;
     margin: 10px;
+    text-align: left;
+    color: var(--bege);
 }
 
 
@@ -146,6 +175,15 @@ section.sobre-mim > p {
 
 
 @media screen and (min-width: 768px) {
+
+    header #topo {     
+        padding-left: 20px;
+        height: 100px;
+        margin: 10px;
+        padding-bottom: 10px;
+        
+        
+     }
     span#burger{
         display: none;
 
@@ -160,7 +198,55 @@ section.sobre-mim > p {
         
 
     }
-    main {
-        width: 1200px;
+    
+    section.sobre-mim > p {
+        background-color: var(--bege);
+        color: var(--marron);
+        text-align: center;
+        border-radius: 0px 0px 10px 10px;
+        padding: 5px;
+        box-shadow: 5px 10px 10px;
     }
+    /*--------------------CARDs----------------------------------------------------*/
+        .card {
+            float: left;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            height: 400px;
+            margin: 10px;
+            margin-right: 20px;
+            border: 1px solid var(--marron02);
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px solid black;
+            background-color: var(--cinza);
+            color: var(--bege);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px;
+            text-align: center;
+            color: var(--bege);
+        }
+
+        .card-text {
+            font-size: 16px;
+            margin: 10px;
+            text-align: center;
+            color: var(--bege);
+        }
+        
+
+
+        /*------------------------DISPOSITIVOS MAIORES___________________________*/
 }
