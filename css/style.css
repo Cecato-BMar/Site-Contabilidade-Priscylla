@@ -95,7 +95,7 @@ section.sobre-mim {
    
 }
  section.sobre-mim > h2 {
-    background-color: var(--bege);
+    background-color: #ffe3b2a8;
     color: var(--marron); /* Cor do texto para melhor legibilidade sobre a imagem */
     text-align: center;
     border-radius: 10px 10px 0px 0px;
@@ -106,7 +106,7 @@ section.sobre-mim {
     
  }
 section.sobre-mim > p {
-    background-color: var(--bege);
+    background-color:  #ffe3b2a8;
     color: var(--marron);
     border-radius: 0px 0px 10px 10px;
     padding: 5px;
@@ -169,9 +169,25 @@ section#servicos > h3 {
     color: var(--bege);
 }
 
+.card-button {
+    
+        background-image: url('../img/sobre.png');
+        background-size: cover; /* Faz com que a imagem cubra toda a seção */
+        background-position: center; /* Centraliza a imagem na seção */       
+        padding: 20px;
+       
+    }
+
+.card-button > ul {
+    background-color: #ffe3b2a8;
+    color: var(--marron);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 10px 10px;
+}
 
 
-/*------------------------DISPOSITIVOS MAIORES___________________________*/
+/*------------------------DISPOSITIVOS MAIORES___________________________
 
 
 @media screen and (min-width: 768px) {
@@ -207,7 +223,8 @@ section#servicos > h3 {
         padding: 5px;
         box-shadow: 5px 10px 10px;
     }
-    /*--------------------CARDs----------------------------------------------------*/
+    */
+    /*--------------------CARDs----------------------------------------------
         .card {
             float: left;
             flex-direction: column;
@@ -245,8 +262,26 @@ section#servicos > h3 {
             text-align: center;
             color: var(--bege);
         }
-        
+        .card-button {
+            section.sobre-mim {
+                background-image: url('../img/sobre.png');
+                background-size: cover; /* Faz com que a imagem cubra toda a seção 
+                background-position: center; /* Centraliza a imagem na seção        
+                padding: 20px;
+               
+            }
+             section.sobre-mim > h2 {
+                background-color: var(--bege);
+                color: var(--marron); /* Cor do texto para melhor legibilidade sobre a imagem 
+                text-align: center;
+                border-radius: 10px 10px 0px 0px;
+                padding: 15px;
+                text-decoration-line: underline;
+                box-shadow: 5px 0px 8px;
+                
+                
+             }
+        }
 
 
         /*------------------------DISPOSITIVOS MAIORES___________________________*/
-}
