@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     list-style: none;
+    box-sizing: border-box;
 }
 
 /* Definir variáveis para as cores */
@@ -87,11 +88,14 @@ menu > ul >li> a:hover{
 }main{
     background-color: var(--cinza);
 }
+
+
 section.sobre-mim {
     background-image: url('../img/sobre.png');
     background-size: cover; /* Faz com que a imagem cubra toda a seção */
     background-position: center; /* Centraliza a imagem na seção */       
     padding: 20px;
+    
    
 }
  section.sobre-mim > h2 {
@@ -111,6 +115,7 @@ section.sobre-mim > p {
     border-radius: 0px 0px 10px 10px;
     padding: 5px;
     box-shadow: 5px 10px 10px;
+    
 }
 
 section#servicos > h2 {
@@ -184,7 +189,84 @@ section#servicos > h3 {
     border-radius: 10px;
     padding: 5px;
     box-shadow: 5px 10px 10px;
+    text-align: center;
 }
+div#nf {
+    width: 90%;
+    text-align: center;
+}
+section#contato > h2 {
+    background-color: var(--marron02);
+    text-align: center;
+    color: var(--bege);
+    padding: 3px;
+    border: 2px solid var(--bege);
+    border-radius: 10px;
+}
+
+/* Alinhar os campos do formulário */
+form {
+    width: 90%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5px;   
+    
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--bege);
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+    
+  }
+  
+  .form-group input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
+  
+  /* Ajustar a largura do formulário */
+  
+  #contato form {
+    
+    margin: 0 auto;
+  }
+  
+  footer {
+    background-color: var(--marron);
+    color: var(--bege);
+    border-color: var(--marronclaro);
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #FFE3B2;
+
+  }
+
+
 
 
 /*------------------------DISPOSITIVOS MAIORES___________________________*/
@@ -214,9 +296,14 @@ section#servicos > h3 {
         
 
     }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
     
     section.sobre-mim > p {
-        background-color: var(--bege);
+        background-color: #ffe3b2a8;
         color: var(--marron);
         text-align: center;
         border-radius: 0px 0px 10px 10px;
@@ -224,64 +311,6 @@ section#servicos > h3 {
         box-shadow: 5px 10px 10px;
     }
     
-    /*--------------------CARDs----------------------------------------------
-        .card {
-            float: left;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 300px;
-            height: 400px;
-            margin: 10px;
-            margin-right: 20px;
-            border: 1px solid var(--marron02);
-            border-radius: 10px;
-            box-shadow: 2px 2px 2px solid black;
-            background-color: var(--cinza);
-            color: var(--bege);
-        }
-
-        .card-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        .card-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 10px;
-            text-align: center;
-            color: var(--bege);
-        }
-
-        .card-text {
-            font-size: 16px;
-            margin: 10px;
-            text-align: center;
-            color: var(--bege);
-        }
-        .card-button {
-            section.sobre-mim {
-                background-image: url('../img/sobre.png');
-                background-size: cover; /* Faz com que a imagem cubra toda a seção 
-                background-position: center; /* Centraliza a imagem na seção        
-                padding: 20px;
-               
-            }
-             section.sobre-mim > h2 {
-                background-color: var(--bege);
-                color: var(--marron); /* Cor do texto para melhor legibilidade sobre a imagem 
-                text-align: center;
-                border-radius: 10px 10px 0px 0px;
-                padding: 15px;
-                text-decoration-line: underline;
-                box-shadow: 5px 0px 8px;
-                
-                
-             }
-        }
-
-
-        /*------------------------DISPOSITIVOS MAIORES___________________________*/
+    form {
+        width: 50%;
+    }
