@@ -20,9 +20,7 @@
 header {       
     background-color: #AA7839;
     text-align: center;
-    
-   
-   
+       
 }   
 header > img {
     width: 200px;
@@ -33,23 +31,19 @@ header > img {
 
     
 }
-header #topo {     
-   padding-left: 20px;
-   height: 150px;
-   margin: 30px;
-   padding-bottom: 10px;
-   
-   
-}
-header #topo > h1 {
+
+#topo > h1 {
     font-size: 4em;
     color: #FFE3B2;
 }
-header #topo > p {
+#topo > p {
     font-size: 1.5em;
     color: #FFE3B2;
+   
+     
     
 }
+
 span#burger{
     background-color: var(--marron);
     display: block;
@@ -71,6 +65,7 @@ menu{
 menu > ul{
     list-style-type: none;
     background-color: var(--marron);
+    
     
 }
 menu > ul > li > a {
@@ -99,7 +94,7 @@ section.sobre-mim {
    
 }
  section.sobre-mim > h2 {
-    background-color: #ffe3b2a8;
+    background-color: #ffe3b2c9;
     color: var(--marron); /* Cor do texto para melhor legibilidade sobre a imagem */
     text-align: center;
     border-radius: 10px 10px 0px 0px;
@@ -110,12 +105,12 @@ section.sobre-mim {
     
  }
 section.sobre-mim > p {
-    background-color:  #ffe3b2a8;
+    background-color:  #ffe3b2c9;
     color: var(--marron);
     border-radius: 0px 0px 10px 10px;
     padding: 5px;
     box-shadow: 5px 10px 10px;
-    
+        
 }
 
 section#servicos > h2 {
@@ -142,14 +137,15 @@ section#servicos > h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 300px;
     height: 100%;
     margin: 10px;
     border: 1px solid var(--marron02);
     border-radius: 10px;
     box-shadow: 2px 2px 2px solid black;
     background-color: var(--cinza);
-    color: ;
+    padding-left: 10px;
+    
 }
 
 .card-image {
@@ -184,7 +180,7 @@ section#servicos > h3 {
     }
 
 .card-button > ul {
-    background-color: #ffe3b2a8;
+    background-color: #ffe3b2c9;
     color: var(--marron);
     border-radius: 10px;
     padding: 5px;
