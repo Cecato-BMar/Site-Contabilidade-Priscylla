@@ -144,7 +144,7 @@ section#servicos > h3 {
     border-radius: 10px;
     box-shadow: 2px 2px 2px solid black;
     background-color: var(--cinza);
-    padding-left: 10px;
+    margin: 0 auto;
     
 }
 
@@ -298,7 +298,10 @@ form {
         justify-content: center;
     }
     
-   
+   .sobre-mim h2, p {
+    max-width: 800px;
+    margin: 0 auto;
+   }
 
     .sobre-mim > p {
         background-color: #ffe3b2c9;
