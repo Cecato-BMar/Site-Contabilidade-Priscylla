@@ -298,13 +298,17 @@ form {
         justify-content: center;
     }
     
-    section.sobre-mim > p {
-        background-color: #ffe3b2a8;
+   
+
+    .sobre-mim > p {
+        background-color: #ffe3b2c9;
         color: var(--marron);
         text-align: center;
         border-radius: 0px 0px 10px 10px;
         padding: 5px;
         box-shadow: 5px 10px 10px;
+        
+
     }
     
     form {
