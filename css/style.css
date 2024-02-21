@@ -172,14 +172,32 @@ section#servicos > h3 {
 
 .card-button {
     
-        background-image: url('../img/sobre.png');
+        background-image: url('../img/impressora.png');
+        background-size: cover; /* Faz com que a imagem cubra toda a seção */
+        background-position: center; /* Centraliza a imagem na seção */       
+        padding: 20px;
+        background-position: bottom;
+       
+    }
+    .card-button {
+    
+        background-image: url('../img/impressora.png');
         background-size: cover; /* Faz com que a imagem cubra toda a seção */
         background-position: center; /* Centraliza a imagem na seção */       
         padding: 20px;
        
     }
 
-.card-button > ul {
+    .card-button-2 {
+    
+        background-image: url('../img/impressora.png');
+        background-size: cover; /* Faz com que a imagem cubra toda a seção */
+        background-position: center; /* Centraliza a imagem na seção */       
+        padding: 20px;
+       
+    }
+
+.card-button  > ul {
     background-color: #ffe3b2c9;
     color: var(--marron);
     border-radius: 10px;
@@ -187,6 +205,15 @@ section#servicos > h3 {
     box-shadow: 5px 10px 10px;
     text-align: center;
 }
+.card-button-2  > ul {
+    background-color: #ffe3b2c9;
+    color: var(--marron);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 10px 10px;
+    text-align: center;
+}
+
 div#nf {
     width: 90%;
     text-align: center;
@@ -296,8 +323,12 @@ form {
     .container {
         display: flex;
         justify-content: center;
+        
+        
     }
-    
+    .card {
+        width: auto;
+    }
    .sobre-mim h2, p {
     max-width: 800px;
     margin: 0 auto;
@@ -317,3 +348,12 @@ form {
     form {
         width: 50%;
     }
+    .card-button ul {
+        max-width: 800px;
+        margin: 0 auto;
+       }
+       .card-button-2 ul {
+        max-width: 800px;
+        margin: 0 auto;
+       }
+}
