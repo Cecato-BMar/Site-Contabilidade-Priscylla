@@ -218,6 +218,32 @@ div#nf {
     width: 90%;
     text-align: center;
 }
+
+section#redes {
+    background-color: var(--marron02);
+    text-align: center;
+    color: var(--bege);
+    padding: 3px;
+    border: 2px solid var(--bege);
+    border-radius: 10px;
+}
+.card-button-3 {
+    
+    display: flex;
+    justify-content: center;      
+    padding: 20px;
+   
+}
+.card-img {
+    background-color: #ffe3b285;   
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 30%;
+
+    
+}
+
 section#contato > h2 {
     background-color: var(--marron02);
     text-align: center;
@@ -356,4 +382,20 @@ form {
         max-width: 800px;
         margin: 0 auto;
        }
+       .card-button-3 {
+        
+        display: flex;
+        justify-content: center; 
+        
+       
+    }
+       .card-img {
+        background-color: #ffe3b285;   
+        width: 50px;
+        height: 50px;
+        margin-left: 30px;
+        border-radius: 30%;
+        
+      
+    }
 }
